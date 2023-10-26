@@ -1,37 +1,53 @@
 <html> 
-  <head>
-    <title>Email Template</title>
-    <link href="stylesheet.css" rel="stylesheet">
-  </head>
- 
-  <body>
+    <head>
+
+
+<!--CREATE STYLING-->
+
+        <style>
+            .header-module {
+                background-color: grey;
+            }
+
+        </style>
+
+
+
+
+
+
+        <title>Email Template</title>
+    </head> 
+    <body align="center">
+        <div id="email" style="width:100%;">
 
     <!--Header Module-->
-    <table class="header-module">
-        <tr> <!--divider-->
-            <td class="divider"></td>
-        </tr>
+    <table class="header-module" role="presentation" style="width: 100%; border: 0; border-collapse: collapse; border-spacing: 0; text-align: center;">
         <tr> <!--logo-->
-            <td class="logo"></td>
-                <img src="#" alt="Placeholder Image (Logo)">
+            <td class="logo" style="padding: 20px 0 0 0; text-align: center;"></td>
+                <img src="placeholder-image-2617919827" alt="Placeholder Image (Logo)">
         </tr>
     </table>
 
+
     <!--Welcome Module-->
-    <table class="welcome-module">
+    <table align="center" class="welcome-module" role="presentation" style="width:600px;border:0;border-collapse:collapse;border-spacing:0; text-align: center">
         <tr> <!--Welcome Text-->
-            <td class="welcome-text"></td>
+            <td class="welcome-text" style="padding: 0px 30px 0 30px;">
+                <h1 style="font-size:24px; padding: 0; font-family: Arial, sans-serif; color:#12232E; font-weight: normal;">
+                    Welcome to my email sample</h1>
+            </td>
         </tr>
         <tr> <!--welcome image-->
-            <td class="welcome-image">
-                <img src="#" alt="Placeholder Image (Welcome Image)">
+            <td class="welcome-image" style="padding: 20px 0 0 0; text-align: center;">
+                <img src="placeholder-welcomeImage" alt="Placeholder Image (Welcome Image)">
             </td>
         </tr>
     </table>
 
 
     <!--Promotion Module-->
-    <table class="promotion module">
+    <table class="promotion module" role="presentation">
         <tr> <!--promo text-->
             <td class="promotion text"></td>
             <h2>Upcoming promotion information</h2>
@@ -45,30 +61,25 @@
 
 
     <!--Column Module-->
-    <table class="three-column-table-module">
-
-        <tr> <!--top left column-->
-            <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
-                <tr>
-                    <td align="center" class="top-left-column">
-                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
-                            <tr>
-                                <td align="left" valign="top" width="168" class="col first collapse">
-                                    <img src="#" alt="colum one image">
-                                </td>
-                                <td align="center" valign="middle" width="360" class="col row-end collapse">
-                                    <a class="columnHeading" href="#">
-                                    <h3>Heading</h3></a>
-                                    <p>Loren ipsun dolor sit anet, consectetur adipisci elit, sed eiusnod tenpor incidunt ut labore et dolore nagna aliqua. Ut enin ad ninin venian, quis nostrun exercitationen ullan corporis suscipit laboriosan, nisi ut aliquid ex ea connodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillun dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt nollit anin id est laborun.</p>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-            </table>
+    <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+        <tr>
+            <td align="center" valign="top" class="pb24">    
+                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                    <tr>
+                        <td align="left" valign="top" width="168" class="col first collapse">
+                            <img src="#" alt="colum one image">
+                        </td>
+                        <td align="center" valign="middle" width="360" class="col row-end collapse">
+                            <a class="columnHeading" href="#">
+                            <h3>Heading</h3></a>
+                            <p>Loren ipsun dolor sit anet, consectetur adipisci elit, sed eiusnod tenpor incidunt ut labore et dolore nagna aliqua. Ut enin ad ninin venian, quis nostrun exercitationen ullan corporis suscipit laboriosan, nisi ut aliquid ex ea connodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillun dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt nollit anin id est laborun.</p>
+                        </td>
+                    </tr>
+                </table>    
+            </td>
         </tr>
         <tr> <!--middle right column-->
-            <td align="center" valign="top" class="middle-right-column" dir="rtl">
+            <td align="center" valign="top" class="pb24" dir="rtl">
                 <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
                     <tr>
                         <td align="left" valign="top" width="168" class="col row-end collapse" dir="ltr">
@@ -80,15 +91,15 @@
                             <p>Loren ipsun dolor sit anet, consectetur adipisci elit, sed eiusnod tenpor incidunt ut labore et dolore nagna aliqua. Ut enin ad ninin venian, quis nostrun exercitationen ullan corporis suscipit laboriosan, nisi ut aliquid ex ea connodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillun dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt nollit anin id est laborun.</p>
                         </td>
                     </tr>
-                </table>
+                </table>    
             </td>
         </tr>
         <tr> <!--bottom right column-->
-            <td align="center" valign="top" class="bottom-right-column">
+            <td align="center" valign="top" class="pb24">
                 <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
                     <tr>
                         <td align="left" valign="top" width="168" class="col first collapse">
-                            <img src="#" alt="column three image">
+                            <img src="#" alt="colum three image">
                         </td>
                         <td align="center" valign="middle" width="360" class="col last collapse">
                             <a class="columnHeading" href="#">
@@ -96,20 +107,22 @@
                             <p>Loren ipsun dolor sit anet, consectetur adipisci elit, sed eiusnod tenpor incidunt ut labore et dolore nagna aliqua. Ut enin ad ninin venian, quis nostrun exercitationen ullan corporis suscipit laboriosan, nisi ut aliquid ex ea connodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillun dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt nollit anin id est laborun.</p>
                         </td>
                     </tr>
-                </table>
+                </table>    
             </td>
         </tr>
     </table>
 
+
     <!--Footer Module-->
-    <table class="footer">
-        <tr class="full-widht-background">
-            <td class="footer-links">
+    <table align="center" class="footer" role="presentation" style="background-color: grey; width: 100%;">
+        <tr class="full-width-background">
+            <td class="footer-links" align="center">
                 <a href="#">Terms of Service</a> |
                 <a href="#">Privacy Policy</a>|
                 <a href="#">Unsubscribe</a>
             </td>
         </tr>
-    </table>    
+    </table>
+    </div>   
   </body>
 </html>
