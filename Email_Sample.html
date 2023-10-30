@@ -1,29 +1,35 @@
 <html> 
     <head>
-
-
-<!--CREATE STYLING-->
-
+        
         <style>
-            
+        @MEDIA screen and (MAX-WIDTH: 600px) {
+            .top {display: table-header-group !important; width: 100% !important;}
+            .bottom { display: table-footer-group !important; width: 100% !important; }            
+        }
 
+        .PromoButton {
+            border: none;
+            color: black;
+            padding: 14px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            background-color: lightcyan;
+            }    
         </style>
-
-
-
-
-
 
         <title>Email Template</title>
     </head> 
-    <body align="center">
-        <div id="email" style="width:100%;">
+    <body align="center" >
+        <div id="email" style="width:800px; margin: auto; background:white;">
 
-    <!--Header--> 
-
+    <!--Header-->
     <table role="presentation" border="1" width="100%" cellspacing="0">
         <tr>
-            <td bgcolor="grey" align="center" style="color: white;">
+            <td bgcolor="#498186" align="center" style="color: #5FA9DC;">
                 <img alt="placeholder image" src="#" width="400px">
                 <h1 style="font-size: 52px; margin:0 0 20px 0; font-family:Arial;"> Welcome to my email sample</h1>
             </td>
@@ -33,67 +39,65 @@
 
 
     <!--Promotion Module-->
-    <table class="promotion module" role="presentation" align="center" >
+    <table class="promotion module" role="presentation" align="center">
         <tr> <!--promo text-->
-            <td class="promotion text"></td>
+            <td class="promotion text" ></td>
             <h2>Upcoming promotion information</h2>
-            <p>Promotional information</p>
+            <p style="font-size:16px; font-family:Arial">Promotional information</p>
         </tr>
         <tr>
             <td class="promotion button" role="presentation">
-                <a role="button" href="#">Button</a>
+                <button class="PromoButton" style="color: #26B5A7;">Green</button>
             </td>
         </tr>
     </table>
 
 
     <!--Column Module-->
-    <table  border="1" cellpadding="10px" cellspacing="0" role="presentation" align="center">
+    <table class="columns" border="1" cellpadding="0px" cellspacing="0" role="presentation" align="center" bgcolor="#DBA22E">
         <tr>
             <td align="center" valign="top" class="pb24">    
-                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
-                    <td align="left" valign="top" width="168" class="col first collapse"> 
-                        <td>
-                            <img alt="placeholder" src="#" width="200px" align="center">
+                <table border="0" cellpadding="10px" cellspacing="0" role="presentation" width="100%">
+                    <td align="left" valign="top" width="40" class="col first collapse"> 
+                        <td class="top">
+                            <img alt="placeholder" src="#" width="200px" align="left">
                         </td>
-                        <td>
+                        <td class="bottom">
                             <a class="columnHeading" href="#">
                             <h2>Heading</h2></a>
-                            <p style="margin:0 0 12px 0;font-size:16px;line-height:24px;font-family:Arial">Loren ipsun dolor sit anet, consectetur adipisci elit, sed eiusnod tenpor incidunt ut labore et dolore nagna aliqua. Ut enin ad ninin venian, quis nostrun exercitationen ullan corporis suscipit laboriosan, nisi ut aliquid ex ea connodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillun dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt nollit anin id est laborun.</p>
+                            <p style="margin:0 0 0 0; font-size:16px; line-height:20px; font-family:Arial">Loren ipsun dolor sit anet, consectetur adipisci elit, sed eiusnod tenpor incidunt ut labore et dolore nagna aliqua. Ut enin ad ninin venian, quis nostrun exercitationen ullan corporis suscipit laboriosan, nisi ut aliquid ex ea connodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillun dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt nollit anin id est laborun.</p>
                         </td>
                     </td>
-                </td>            
-            </td>
-                </table>    
+                </table>
             </td>
         </tr>
         <tr> <!--middle right column-->
             <td align="center" valign="top" class="pb24" dir="rtl">
-                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
-                    <td align="left" valign="top" width="168" class="col row-end collapse" dir="ltr">
-                        <td>
-                            <img alt="placeholder" src="#" width="200px" align="center">
+                <table border="0" cellpadding="10px" cellspacing="0" role="presentation" width="100%">
+                    <td align="left" valign="top" width="40" class="col row-end collapse" dir="ltr">
+                        <td class="top">
+                            <img alt="placeholder" src="#" width="200px" align="right">
                         </td>
-                        <td>
+                        <td class="bottom">
                             <a class="columnHeading" href="#">
                             <h2>Heading</h2></a>
-                            <p style="margin:0 0 12px 0;font-size:16px;line-height:24px;font-family:Arial">Loren ipsun dolor sit anet, consectetur adipisci elit, sed eiusnod tenpor incidunt ut labore et dolore nagna aliqua. Ut enin ad ninin venian, quis nostrun exercitationen ullan corporis suscipit laboriosan, nisi ut aliquid ex ea connodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillun dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt nollit anin id est laborun.</p>
+                            <p style="margin:0 0 0 0; font-size:16px; line-height:20px; font-family:Arial; text-align: left;">Loren ipsun dolor sit anet, consectetur adipisci elit, sed eiusnod tenpor incidunt ut labore et dolore nagna aliqua. Ut enin ad ninin venian, quis nostrun exercitationen ullan corporis suscipit laboriosan, nisi ut aliquid ex ea connodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillun dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt nollit anin id est laborun.</p>
                         </td>
                     </td>
-                </table>    
+                </table>
             </td>
         </tr>
         <tr> <!--bottom right column-->
             <td align="center" valign="top" class="pb24">
-                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
-                    <td align="left" valign="top" width="168" class="col first collapse">
-                        <td>
-                            <img alt="placeholder" src="#" width="200px" align="center">
+                <table border="0" cellpadding="10px" cellspacing="0" role="presentation" width="100%">
+                    <td align="left" valign="top" width="40" class="col first collapse">
+                        <td class="top">
+                            <img alt="placeholder" src="#" width="200px" align="left">
                         </td>
-                        <td>
+                        <td class="bottom">
                             <a class="columnHeading" href="#">
                             <h2>Heading</h2></a>
-                            <p style="margin:0 0 12px 0;font-size:16px;line-height:24px;font-family:Arial">Loren ipsun dolor sit anet, consectetur adipisci elit, sed eiusnod tenpor incidunt ut labore et dolore nagna aliqua. Ut enin ad ninin venian, quis nostrun exercitationen ullan corporis suscipit laboriosan, nisi ut aliquid ex ea connodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillun dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt nollit anin id est laborun.</p>
+                            <p style="margin:0 0 0 0; font-size:16px; line-height:20px; font-family:Arial">Loren ipsun dolor sit anet, consectetur adipisci elit, sed eiusnod tenpor incidunt ut labore et dolore nagna aliqua. Ut enin ad ninin venian, quis nostrun exercitationen ullan corporis suscipit laboriosan, nisi ut aliquid ex ea connodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillun dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt nollit anin id est laborun.</p>
                         </td>            
                     </td>
                 </table>    
@@ -105,7 +109,7 @@
     <!--Footer Module-->
     <table role="presentation" border="1" width="100%" cellspacing="0">
         <tr class="full-width-background">
-            <td class="footer-links" bgcolor="#F5F8FA" style="padding: 30px 30px;" align="center">
+            <td class="footer-links" bgcolor="#498186" style="padding: 30px 30px;" align="center">
                 <a href="#">Terms of Service</a> |
                 <a href="#">Privacy Policy</a>|
                 <a href="#">Unsubscribe</a>
